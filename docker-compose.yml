@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pio:
+    build: .
+    volumes:
+      - ./engine:/opt/engine
+    ports:
+      - '10800:8000'
+      - '7000:7000' 
